@@ -3,7 +3,7 @@ body{
     padding-top: 90px;
     padding-left: 120px;
     /* padding-bottom: 1000px; */
-    padding-right: 20px;
+    padding-right: 25px;
     background-color: rgb(248, 248, 248);
 
 }
@@ -37,26 +37,14 @@ p {
 }
 
 .video-preview{
-    /* width: 300px; */
-    /* display: inline-block; */
-    /* margin-right: 12px; */
     vertical-align: top;
 }
 
 .profile-picture{
-    /* display: inline-block; */
     width: 50px;
     vertical-align: top;
-    /* background-color: lightcoral; */
 
 }
-
-/* .video-details{ */
-    /* display: inline-block; */
-    /* width: 200px; */      /*After taking 50px for profile icon, remaining space is alloted for the text as pe 1FR given in GRID Column*/
-    /* background-color: lightcoral; */
-
-/* } */
 
 .profile-icon{
     width: 40px;
@@ -112,7 +100,6 @@ p {
 
 
 .left-section{
-    /* background-color: lightcoral; */
     /* width: 200px; * this is not required now, because let the space to stretch as per the content*/
     display: flex;
     flex-direction: row;
@@ -275,5 +262,124 @@ p {
     /* font-weight: 500; */
 }
 
+
+/*-------------------------------------Responsive code -------------------------------------*/
+
+@media only screen and (max-width : 600px){
+
+    body{
+        margin: 0;
+        padding-left: 90px;
+    
+    }
+
+    .hamburger-logo{
+        height: 25px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .youtube-logo{
+        height: 20px;
+    }
+
+    .sidebar-items{
+        height: 65px;
+    }
+
+    .video-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 16px;
+        row-gap: 40px;
+    }
+
+    .sidebar-items img{
+        height: 25px;
+        margin-bottom: 5px; 
+    }
+    
+    .sidebar-items div{
+        font-size: 10px;
+    }
+
+
+    .upload-icon,.apps-icon{
+        height: 20px;
+        width: 20px;
+    }
+    
+   
+    .myprofile-img{
+        height: 45px;
+        width: 45px;
+        border-radius: 40px;
+    
+    }
+    
+    .notification-icon{
+        height: 30px;
+        width: 30px;
+    
+    }
+    
+    .myprofile-img{
+        height: 30px;
+        width: 30px;
+        border-radius: 40px;
+    
+    }
+    
+
+    .middle-section{
+        margin-left:10px;
+        margin-right: 10px;
+        
+    }
+
+    .right-section{
+        width: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        margin-left: 10px;
+        flex-shrink: 0;
+    }
+    
+
+    .voicesearch-btn{
+        height: 30px;
+        width: 30px;
+    }
+    
+    .voicesearch-icon{
+        height: 20px;
+        margin-top: 4px;
+    }
+    
+    .searchbar-btn{
+        height: 30px;
+        width: 30px;
+        margin-right: 10px;
+        background-color: rgb(248 248 248);
+        border: 1px solid rgb(192, 192, 192);
+    
+    }
+    .searchbar-icon{
+        height: 20px;
+        margin-top: 4px;
+    }
+    .search-bar{
+        height: 27px;
+        flex:1;
+        border: 1px solid rgb(192, 192, 192);
+        padding-left: 14px;
+        font-size: 18px;
+        margin-right: -1px;
+        width: 0;
+    
+    }
+    
+}
 
 
